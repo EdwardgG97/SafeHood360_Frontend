@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PQRS - SafeHood360</title>
+  <link rel="stylesheet" href="../CSS/style_pqr.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo">🔰 <span>SafeHood360</span></div>
+    </header>
+
+    <main class="form-card">
+      <h2>PQRS</h2>
+      <p>
+        Si tienes alguna petición, queja, reclamo o sugerencia, por favor ingresar la información y nosotros te daremos respuesta lo más pronto posible
+      </p>
+
+      <form id="pqrsForm">
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <div class="success-message" id="successMessage">
+          Tu PQRS será gestionado y te daremos respuesta al correo registrado
+          <span class="close-btn" onclick="cerrarMensaje()">×</span>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="window.location.href='../index.html'">Regresar</button>
+
+      </form>
+    </main>
+
+    <footer>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook" class="icon"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter" class="icon"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="instagram" class="icon"></a>
+    </footer>
+  </div>
+
+  <script src="../JS/script.js"></script>
+  <script src="../JS/pqrs.js"></script>
+</body>
+</html>

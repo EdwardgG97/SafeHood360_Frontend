@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Directorio - SafeHood360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style_directorio.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="top-section">
+        <div class="logo">🔰 <span>SafeHood360</span></div>
+        <div class="menu">
+          <h3>Menú</h3>
+          <a href="../HTML/inicio.html">Inicio</a>
+          <a href="../HTML/perfil.html">Perfil</a>
+          <a href="../HTML/reportar.html">Reportar</a>
+          <a href="../HTML/grupos.html">Grupos</a>
+          <a href="../HTML/directorio.html" class="active">Directorio</a>
+        </div>
+      </div>
+      <div class="logout">
+        <a href="../index.html">Cerrar sesión</a>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+      <h2 class="titulo">Directorio</h2>
+
+      <div class="buscador">
+        <input type="text" id="busqueda" placeholder="Buscar contacto">
+        <button onclick="buscarContacto()">🔍</button>
+      </div>
+
+      <ul id="lista-contactos" class="lista-contactos">
+        <li><input type="radio" name="telefono" value="123"> Emergencias Nacional: 123</li>
+        <li><input type="radio" name="telefono" value="3218000593"> Bomberos: 3218000593</li>
+        <li><input type="radio" name="telefono" value="3019858216"> CAI Barrio 1: 3019858216</li>
+        <li><input type="radio" name="telefono" value="3208557490"> CAI Barrio 2: 3208557490</li>
+        <li><input type="radio" name="telefono" value="3108558115"> CAI Barrio 3: 3108558115</li>
+        <li><input type="radio" name="telefono" value="3216540874"> Contacto 1: 3216540874</li>
+        <li><input type="radio" name="telefono" value="3165489879"> Contacto 2: 3165489879</li>
+        <li><input type="radio" name="telefono" value="3018588050"> Contacto 3: 3018588050</li>
+      </ul>
+
+      <!-- Ícono de llamada -->
+<div class="icono-llamada" onclick="simularLlamada()">📞</div>
+
+<!-- Mensaje de llamada -->
+<div id="mensaje-llamada" class="mensaje-llamada oculto">Llamando...</div>
+
+
+      <div class="redes">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

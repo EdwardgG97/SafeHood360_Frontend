@@ -1,0 +1,272 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e0ecff;
+  }
+  
+  /* Estructura principal */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #0c1f2c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9bd3f3;
+  }
+  
+  .menu {
+    text-align: center;
+  }
+  
+  .menu h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .menu a:hover {
+    background-color: #1a354b;
+  }
+  
+  /* Logout */
+  .logout {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .logout a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .logout a:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Contenido principal */
+  .main-content, .dashboard {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    border-left: 10px solid #d0e1ff;
+  }
+  
+  .titulo {
+    color: #273c75;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    color: #f39c12;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  #mapa, canvas {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+  }
+  
+  /* Botones */
+  .btn-cargar, .btn-reportar {
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn-cargar {
+    background-color: #c0392b;
+  }
+  
+  .btn-cargar:hover {
+    background-color: #a93226;
+  }
+  
+  .btn-reportar {
+    background-color: #e74c3c;
+  }
+  
+  .btn-reportar:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-enviar {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content h3 {
+    color: #c0392b;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .cerrar {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  /* Evidencia */
+  .cargar-evidencia {
+    display: block;
+    background-color: #e9f6ff;
+    color: #27ae60;
+    border: 1px dashed #27ae60;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabla */
+  table {
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 14px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table thead {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  /* Mensaje de éxito */
+  .exito {
+    background-color: #a9dfbf;
+    color: #145a32;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  /* Utilidades */
+  .hidden {
+    display: none;
+  }
+  
+  /* Footer social */
+  footer.social {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon, .redes img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon:hover, .redes img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  

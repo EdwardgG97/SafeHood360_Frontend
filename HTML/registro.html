@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Cuenta - SafeHood360</title>
+  <link rel="stylesheet" href="../CSS/style_crear.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Encabezado con logo -->
+  <header class="logo-header">
+    <div class="logo">🔰 <span>SafeHood360</span></div>
+  </header>
+
+  <!-- Formulario de registro -->
+  <main class="form-container">
+    <form class="registro-form">
+      <h2>Crea una cuenta</h2>
+
+      <!-- Subida de imagen de perfil -->
+      <div class="profile-upload">
+        <div class="avatar">👤</div>
+        <label for="upload" class="upload-label">⬆ Cargar imagen</label>
+        <input type="file" id="upload" hidden>
+      </div>
+
+      <!-- Campos de entrada -->
+      <div class="input-group">
+        <div class="form-row">
+          <label for="nombres">Nombres:</label>
+          <input type="text" id="nombres" required>
+      
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" required>
+        </div>
+      
+        <div class="form-row">
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" required>
+      
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" required>
+        </div>
+      
+        <div class="form-row">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion">
+      
+          <label for="celular">Celular:</label>
+          <input type="tel" id="celular">
+        </div>
+      
+        <div class="form-row">
+          <label for="nacimiento">Fecha Nacimiento:</label>
+          <input type="date" id="nacimiento">
+      
+          <label for="sexo">Sexo:</label>
+          <input type="text" id="sexo">
+        </div>
+      
+        <div class="form-row">
+          <label for="barrio1">Barrio 1:</label>
+          <input type="text" id="barrio1">
+      
+          <label for="barrio2">Barrio 2:</label>
+          <input type="text" id="barrio2">
+        </div>
+      
+        <div class="form-row">
+          <label for="barrio3">Barrio 3:</label>
+          <input type="text" id="barrio3">
+        </div>
+      </div>
+      
+
+      <!-- Botones -->
+      <button type="submit" class="submit-btn">🟢 Registrarse</button>
+      <a href="../index.html" class="submit-btn">🟢 Regresar</a>
+    </form>
+  </main>
+
+  <!-- Redes sociales -->
+  <div class="social">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icon"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="icon"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="icon"></a>
+  </div>
+
+  <script src="../JS/script.js"></script>
+  <script src="../JS/registro.js"></script>
+</body>
+</html>

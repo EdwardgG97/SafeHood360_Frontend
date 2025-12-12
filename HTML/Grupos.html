@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupos - SafeHood360</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style_grupo.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="top-section">
+          <div class="logo">
+            🔰 <span>SafeHood360</span>
+          </div>
+          <div class="menu">
+            <h3>Menú</h3>
+            <a href="../HTML/inicio.html">Inicio</a>
+               <a href="../HTML/perfil.html">Perfil</a>
+               <a href="../HTML/reportar.html">Reportar</a>
+               <a href="../HTML/grupos.html">Grupos</a>
+               <a href="../HTML/directorio.html">Directorios</a>
+          </div>
+        </div>
+        <div class="logout">
+            <a href="../index.html">Cerrar sesión</a>
+        </div>
+      </div>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <h1 class="titulo">Grupos</h1>
+      <div class="botones">
+        <button onclick="mostrarMensajes(1)">Barrio 1</button>
+        <button onclick="mostrarMensajes(2)">Barrio 2</button>
+        <button onclick="mostrarMensajes(3)">Barrio 3</button>
+      </div>
+      <div class="mensajes" id="mensajes">
+        <!-- Mensajes del grupo se insertan dinámicamente -->
+      </div>
+      <div class="redes">
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="Instagram" /></a>
+      </div>
+    </main>
+  </div>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

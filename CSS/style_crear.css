@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CUERPO */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* ENCABEZADO */
+.logo-header {
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a90e2;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* FORMULARIO */
+.registro-form {
+  background-color: #f7faff;
+  border: 8px solid #b3d3f9;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.registro-form h2 {
+  color: #120078;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* SUBIDA DE PERFIL */
+.profile-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  font-size: 60px;
+  background-color: #eae3eb;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* CAMPOS DE ENTRADA */
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: #eae3eb;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* BOTÓN DE ENVÍO */
+.submit-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #27ae60;
+}
+
+/* REDES SOCIALES */
+.social {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  gap: 15px;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* PIE DE PÁGINA (opcional si lo usas) */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 15px;
+}
