@@ -71,4 +71,3 @@ Para soporte o preguntas, por favor contactar a:
 ## Documentación Adicional
 
 - [MANUAL TECNICO.pdf](MANUAL%20TECNICO.pdf) - Documentación técnica detallada del proyecto
-- [Actividad 6 - PS.pdf](Actividad%206%20-%20PS.pdf) - Documentación complementaria del proyecto
