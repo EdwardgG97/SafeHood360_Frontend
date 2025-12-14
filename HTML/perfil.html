@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil - SafeHood360</title>
+  <link rel="stylesheet" href="../CSS/style_perfil.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <!-- Menú lateral -->
+    <div class="sidebar">
+      <div class="top-section">
+        <div class="logo">
+          🔰 <span>SafeHood360</span>
+        </div>
+        <div class="menu">
+          <h3>Menú</h3>
+          <a href="../HTML/inicio.html">Inicio</a>
+          <a href="../HTML/perfil.html">Perfil</a>
+          <a href="../HTML/reportar.html">Reportar</a>
+          <a href="../HTML/grupos.html">Grupos</a>
+          <a href="../HTML/directorio.html">Directorios</a>
+        </div>
+      </div>
+      <div class="logout">
+          <a href="../index.html">Cerrar sesión</a>
+          <script src="../JS/script.js"></script>
+          <script src="../JS/profile.js"></script>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="profile-content">
+      <div class="profile-card">
+        <h2>Perfil</h2>
+        <div class="profile-img">
+          <div class="avatar">👤</div>
+          <input type="file" id="profileImage" accept="image/*" style="display: none;">
+          <button onclick="document.getElementById('profileImage').click()" class="btn-update">Cambiar imagen</button>
+        </div>
+
+        <div class="profile-fields">
+          <div class="field">
+            <label>Nombres:</label>
+             <input type="text" id="firstName">
+          </div>
+          <div class="field">
+            <label>Apellidos:</label>
+             <input type="text" id="lastName">
+          </div>
+          <div class="field">
+            <label>Sexo:</label>
+             <input type="text" id="gender">
+          </div>
+          <div class="field">
+            <label>Dirección:</label>
+             <input type="text" id="address">
+          </div>
+          <div class="field">
+            <label>Correo:</label>
+             <input type="email" id="email">
+          </div>
+          <div class="field">
+            <label>Contraseña:</label>
+             <input type="password" id="password">
+          </div>
+          <div class="field">
+            <label>Celular:</label>
+             <input type="tel" id="phone">
+          </div>
+          <div class="field">
+            <label>Fecha Nacimiento:</label>
+             <input type="text" id="birthDate">
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="updateProfileBtn" class="btn-update">Actualizar Perfil</button>
+          <button class="btn-update" onclick="window.location.href='../HTML/inicio.html'">Volver</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Redes sociales -->
+  <footer class="social">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icon"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="icon"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="icon"></a>
+  </footer>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/profile.js"></script>
+</body>
+</html>
